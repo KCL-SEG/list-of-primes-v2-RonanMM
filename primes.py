@@ -2,6 +2,9 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
+    if check(number_of_primes) == False:
+        return None
+    
     list = []
     counter = 2
     while len(list) <number_of_primes :
@@ -17,5 +20,11 @@ def primes(number_of_primes):
             list.append(counter)
         counter += 1
     return list
+
+def check(number_of_primes):
+    if number_of_primes < 1:
+        return False
+    else:
+        return True
 
 print(primes(10))
