@@ -3,7 +3,7 @@
 
 def primes(number_of_primes):
     if check(number_of_primes) == False:
-        return None
+        return Null
     
     list = []
     counter = 2
