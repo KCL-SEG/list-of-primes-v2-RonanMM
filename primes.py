@@ -2,8 +2,9 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
-    if check(number_of_primes) == False:
-        return Null
+    
+    if number_of_primes < 1:
+        raise ValueError
     
     list = []
     counter = 2
